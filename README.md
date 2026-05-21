@@ -8,6 +8,7 @@ Test 3ddd
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Release change v2   v3
 =======
 Release change v2
@@ -20,5 +21,8 @@ Release change v2   v3 v6
 =======
 Release change v2   v3 v6 v7
 >>>>>>> 6e4278a (Update release changes to include v7)
+=======
+Release change v2   v3 v6 v7 v8
+>>>>>>> e9049a9 (Update release change to include v8 (#78))
  
 >>>>>>> 35c9387 (Remove unnecessary text from README.md)
