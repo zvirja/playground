@@ -1,15 +1,9 @@
 # playground
 
-<<<<<<< HEAD
-Test
-Test2
-Test 3ddd
-=======
 Test 1 2 4 132 111 111
 Test2 1
 Test 3 12
 
 Release change v2 v3 v4 v5 4
->>>>>>> 0713201 (Update README.md)
 
 Release change v2   v3
