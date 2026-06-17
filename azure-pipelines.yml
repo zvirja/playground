@@ -24,7 +24,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: '[ ! -f readme3 ] || (echo "readme3 file found" && exit 1)'
+- script: '[ ! -f readme3 ] || (echo "readme3 file found" && sleep 30 && exit 1)'
   displayName: 'Fail if readme3 exists'
 
 - script: '[[ "$(Build.SourceBranch)" == *"release/"* ]] && sleep 30 || echo "Not a release branch"'
