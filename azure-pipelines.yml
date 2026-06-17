@@ -24,6 +24,12 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- script: '[ ! -f readme3 ] || (echo "readme3 file found" && exit 1)'
+  displayName: 'Fail if readme3 exists'
+
+- script: '[[ "$(Build.SourceBranch)" == *"release/"* ]] && sleep 60 || echo "Not a release branch"'
+  displayName: 'Sleep if release branch'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
