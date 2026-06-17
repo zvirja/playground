@@ -27,7 +27,7 @@ steps:
 - script: '[ ! -f readme3 ] || (echo "readme3 file found" && exit 1)'
   displayName: 'Fail if readme3 exists'
 
-- script: '[[ "$(Build.SourceBranch)" == *"release/"* ]] && sleep 60 || echo "Not a release branch"'
+- script: '[[ "$(Build.SourceBranch)" == *"release/"* ]] && sleep 30 || echo "Not a release branch"'
   displayName: 'Sleep if release branch'
 
 - script: |
