@@ -1,0 +1,14 @@
+name: ci
+on:
+  pull_request:
+    branches: ['support/**']
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: simulate build
+        run: |
+          d=$(cat ci-delay.txt 2>/dev/null || echo 15); echo "sleep $d"; sleep "$d"
+          if [ -f ci-fail.txt ]; then echo "ci-fail.txt present"; exit 1; fi
